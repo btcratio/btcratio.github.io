@@ -1,0 +1,54 @@
+html, body, div {
+	color: #00FF00;
+	font-family: "Ropa Sans", sans-serif;
+}
+body {
+	background-color: black;
+}
+div {
+	font-size: 2em;
+}
+span, a {
+	color: #004400;
+	text-align: right;
+	text-decoration: none;
+	font-size: 1ex;
+}
+.market {
+	text-align: right;
+	margin: 0;
+	padding: 0 0 20px 0;
+	color: #005500;
+	font-size: 12pt;
+	margin: 0 10px 0 0;
+	line-height: 10pt;
+}
+.market a {
+	font-size: 12pt;
+}
+a:hover {
+	border-bottom: 1px solid #00AA00;
+}
+.box {
+	text-align: center;
+	color: #00FF00;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.box:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+.box:last-child {
+	border-top: 2px solid #004400;
+}
+.rate {
+	margin-top: -33px;
+	cursor: pointer;
+}
+.container {
+	width: 600px;
+	height: 200px;
+	line-height: 200px;
+	margin: 10% auto 0;
+}
