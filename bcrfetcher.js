@@ -19,7 +19,8 @@ $(document).ready(function() {
 		getRates(data, firstMarket, secondMarket);
 	});
 	
-	$('.rate').click(function() {
+	// Toogle ratio display each 3 seconds
+	setInterval(function () {
 		var firstRate = $('.box.first .rate').data('first-rate');
 		var secondRate = $('.box.second .rate').data('second-rate');
 		$('body').toggleClass('ratio-mode');
@@ -29,7 +30,7 @@ $(document).ready(function() {
 		} else {
 			$('.box.first .rate').toggleClass('light');
 		}
-	});
+	}, 3000);
 });
 
 function toggleRatioMode(firstRate, secondRate) {
