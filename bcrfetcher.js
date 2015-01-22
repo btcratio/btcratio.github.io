@@ -43,14 +43,6 @@ function toggleRatioMode() {
 
 function getRates(data, firstMarket, secondMarket) {
 	// Set rates
-
-	console.log('data');
-	console.log(data);
-	console.log('firstMarket');
-	console.log(firstMarket);
-	console.log('secondMarket');
-	console.log(secondMarket);
-	
 	var firstRate = data[firstMarket].rates.last.toFixed(2);
 	var secondRate = data[secondMarket].rates.last.toFixed(2);
 
