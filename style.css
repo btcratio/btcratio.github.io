@@ -10,12 +10,10 @@ div {
 }
 span, a {
 	color: #004400;
-	text-align: right;
 	text-decoration: none;
 	font-size: 1ex;
 }
 .market {
-	text-align: right;
 	margin: 0;
 	padding: 0 0 20px 0;
 	color: #005500;
@@ -24,15 +22,14 @@ span, a {
 	line-height: 10pt;
 }
 .market a {
-	font-size: 12pt;
+	font-size: 22pt;
 }
 a:hover {
-	border-bottom: 1px solid #00AA00;
+	color: #00AA00;
 }
 .box {
 	text-align: center;
 	color: #00FF00;
-	margin-bottom: 20px;
 	padding-top: 20px;
 }
 .box:first-child {
@@ -46,9 +43,18 @@ a:hover {
 	margin-top: -33px;
 	cursor: pointer;
 }
+.light {
+	opacity: 0.2;
+}
 .container {
 	width: 600px;
 	height: 200px;
 	line-height: 200px;
 	margin: 10% auto 0;
+}
+.market-link img {
+	height: 17px;
+	position: relative;
+	top: -7px;
+	left: 4px;
 }

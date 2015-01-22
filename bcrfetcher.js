@@ -20,21 +20,24 @@ $(document).ready(function() {
 	});
 	
 	$('.rate').click(function() {
+		var firstRate = $('.box.first .rate').data('first-rate');
+		var secondRate = $('.box.second .rate').data('second-rate');
 		$('body').toggleClass('ratio-mode');
-		toggleRatioMode();
+		toggleRatioMode(firstRate, secondRate);
+		if (firstRate > secondRate) {
+			$('.box.second .rate').toggleClass('light');
+		} else {
+			$('.box.first .rate').toggleClass('light');
+		}
 	});
 });
 
-function toggleRatioMode() {
-	var firstRate = $('.box.first .rate').data('first-rate');
-	var secondRate = $('.box.second .rate').data('second-rate');
+function toggleRatioMode(firstRate, secondRate) {
 	if ($('body').hasClass('ratio-mode') === true) {
 		if (firstRate > secondRate) {
-			firstRate = (firstRate / secondRate).toFixed(2);
-			secondRate = 1;
+			firstRate = '+' + (((firstRate / secondRate) - 1) * 100).toFixed(1) + '%';
 		} else {
-			secondRate = (secondRate / firstRate).toFixed(2);
-			firstRate = 1;
+			secondRate = '+' + (((secondRate / firstRate) - 1) * 100).toFixed(1) + '%';
 		}
 	}
 	$('.box.first .rate').html(firstRate);
@@ -45,17 +48,17 @@ function getRates(data, firstMarket, secondMarket) {
 	// Set rates
 	var firstRate = data[firstMarket].rates.last.toFixed(2);
 	var secondRate = data[secondMarket].rates.last.toFixed(2);
-
+	
 	$('.box.first .rate').html(firstRate);
 	$('.box.first .rate').data('first-rate', firstRate);
 	$('.box.second .rate').html(secondRate);
 	$('.box.second .rate').data('second-rate', secondRate);
 
 	$('.box.first .market').html(
-			'<a data-dropdown="#dropdown" href="#">'
+			'<a target="_blank" href="' + data[firstMarket].display_URL + '">'
 					+ data[firstMarket].display_name + '</a>');
 
 	$('.box.second .market').html(
-			'<a data-dropdown="#dropdown" href="#">'
+			'<a target="_blank" href="' + data[firstMarket].display_URL + '">'
 					+ data[secondMarket].display_name + '</a>');
 }
