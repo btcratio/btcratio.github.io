@@ -10,10 +10,12 @@ $(document).ready(function() {
 				markets.push(key);
 			}
 		});
-		var firstIndex = Math.round((Math.random() * markets.length));
+		
+		var firstIndex = Math.round((Math.random() * (markets.length-1)));
 		var firstMarket = markets.splice(firstIndex, 1)[0];
-		var secondIndex = Math.round((Math.random() * markets.length));
-		var secondMarket = markets.splice(firstIndex, 1)[0];
+		var secondIndex = Math.round((Math.random() * (markets.length-1)));
+		var secondMarket = markets.splice(secondIndex, 1)[0];
+		
 		getRates(data, firstMarket, secondMarket);
 	});
 	
@@ -41,6 +43,14 @@ function toggleRatioMode() {
 
 function getRates(data, firstMarket, secondMarket) {
 	// Set rates
+
+	console.log('data');
+	console.log(data);
+	console.log('firstMarket');
+	console.log(firstMarket);
+	console.log('secondMarket');
+	console.log(secondMarket);
+	
 	var firstRate = data[firstMarket].rates.last.toFixed(2);
 	var secondRate = data[secondMarket].rates.last.toFixed(2);
 
