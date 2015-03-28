@@ -27,25 +27,93 @@
 		</script>
 	</head>
 	<body>
-		<div id="spinner"><i class="fa fa-refresh"></i></div>
+		<div id="reload-spinner"><i class="fa fa-refresh"></i></div>
 
 		<div class="container-fluid">
 			<div id="average" class="col-lg-5 col-lg-offset-2">
-				<button class="btn btn-default">
-					<h1 id="rate-average"></h1>
+				<div class="kpi-item-headline visible-xs-block">Max</div>
+				<button id="rate-max" class="btn btn-default btn-block kpi-item">
+					<span class="market"></span>
+					<h1>
+						<span class="discrete hidden-xs">Max</span> <span class="rate"></span> <span class="eur">EUR</span>
+					</h1>
+				</button>
+				<div class="kpi-item-headline visible-xs-block">Average</div>
+				<button id="rate-average" class="btn btn-default btn-block kpi-item">
+					<h1>Ø</h1>
+				</button>
+				<div class="kpi-item-headline visible-xs-block">Min</div>
+				<button id="rate-min" class="btn btn-default btn-block kpi-item">
+					<span class="market"></span>
+					<h1>
+						<span class="discrete hidden-xs">Max</span> <span class="rate"></span> <span class="eur">EUR</span>
+					</h1>
 				</button>
 			</div>
 
-			<div id="list" class="col-lg-3">
+			<div id="list" class="col-lg-3 col-lg-offset-1">
 				<ul id="rates-container"></ul>
 			</div>
 
 			<footer class="col-lg-12">
-				<a href="faq.html">FAQ</a> |
+				<a href="#" data-toggle="modal" data-target="#faq">FAQ</a> |
 				<a href="https://github.com/btcratio/btcratio.github.io">github</a> |
 				<a href="https://github.com/btcratio/btcratio.github.io/blob/master/LICENSE.md">Licensed under GPL v3</a>
 			</footer>
 		</div>
+
+		<div id="faq" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+						<h1 class="modal-title">FAQ</h1>
+					</div>
+					<div class="modal-body">
+						<ul>
+							<li>
+								<h5 data-toggle="collapse" data-target="#displayed-data" aria-expanded="false" aria-controls="displayed-data">Displayed Data</h5>
+
+								<div class="collapse" id="displayed-data">
+									<p>Data is fetched from the <a href="https://bitcoinaverage.com/api">bitcoinaverage API.</a></p>
+
+									<p>The rate values are <em>latest trading rates</em> (not average!) on following platforms:</p>
+									<ul class="faq list-icon-square">
+										<li>Bitcoin Central</li>
+										<li>Bitcoin.de</li>
+										<li>Bitonic</li>
+										<li>Bittylicious</li>
+										<li>BTC-e</li>
+										<li>CleverCoin</li>
+										<li>Cryptonit</li>
+										<li>Hitbtc</li>
+										<li>itBit</li>
+										<li>Kraken</li>
+										<li>LocalBitcoins</li>
+										<li>Rock Trading</li>
+										<li>Vircurex</li>
+									</ul>
+
+									<p>The list show those latest trade rates (descending).r</p>
+								</div>
+							</li>
+							<li>
+								<h5 data-toggle="collapse" data-target="#automatic-data-reload" aria-expanded="false" aria-controls="automatic-data-reload">Automatic Data Reload</h5>
+								<p class="collapse" id="automatic-data-reload">Data is reloaded in 60 seconds interval. So you can simply leave this site on your screen and watch the rates go up and down.</p>
+							</li>
+							<li>
+								<h5 data-toggle="collapse" data-target="#manually-reload-data" aria-expanded="false" aria-controls="manually-reload-data">Manually Reload Data</h5>
+								<p class="collapse" id="manually-reload-data">Click on average or on refresh icon (top right corner) manually triggers data reload.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.1.1/tinysort.min.js"></script>

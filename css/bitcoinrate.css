@@ -1,5 +1,18 @@
+/*
+
+TABLE OF CONTENTS
+
+ - Basic Styles
+ - Sections
+ - Responsive Styles
+
+*******************************************************************************/
+
+/******************************************************************************/
+/* Basic Styles
+/******************************************************************************/
 body {
-	padding-top: 100px;
+	margin-top: 100px;
 }
 
 h1 {
@@ -26,30 +39,62 @@ p {
 	margin: 10px 0;
 }
 
-span.eur {
+span.eur, span.discrete {
 	font-size: 0.5em;
 	color: #004400;
 }
 
-footer {
-	margin-top: 80px;
-	border-top: 1px solid #002200;
-	padding: 40px 0 40px;
+/******************************************************************************/
+/* Sections
+/******************************************************************************/
+
+/* KPI */
+#kpi {
 	text-align: center;
 }
 
-#average {
-	text-align: center;
+.kpi-item {
+	padding: 13px 20px;
 }
 
-#rate-average {
-	margin: 40px;
+.kpi-item h1 {
+	margin: 40px 0;
 }
 
+.kpi-item:hover {
+	background-color: #003300;
+}
+
+.kpi-item > span.market {
+	display: block;
+	font-size: 1em;
+	text-align: right;
+	color: #004400;
+}
+
+.kpi-item-headline {
+	margin-top: 20px;
+}
+
+.kpi-item-headline:first-child {
+	margin-top: -10px;
+}
+
+#rate-min, #rate-max {
+	font-size: 1em;
+	background-color: #001100;
+}
+
+#rate-min h1, #rate-max h1 {
+  margin: 20px;
+  margin-top: 0px;
+}
+
+/* Rates Container */
 #rates-container > li {
-	padding: 10px 0;
+	padding: 0 0 40px;
 	text-align: left;
-	margin-bottom: 20px;
+	list-style-type: none;
 }
 
 #rates-container > li > h2 {
@@ -57,13 +102,8 @@ footer {
 	color: #00DD00;
 }
 
-#rates-container ul, #rates-container li {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-#spinner {
+/* Reload Spinner */
+#reload-spinner {
 	position: fixed;
 	top: 40px;
 	right: 5%;
@@ -72,9 +112,28 @@ footer {
 	cursor: pointer;
 }
 
-#spinner .fa-spin {
+#reload-spinner .fa-spin {
 	color: #008800;
 }
+
+/* FAQ */
+#faq h5 {
+	color: #00bb00;
+	cursor: pointer;
+}
+
+/* Footer */
+footer {
+	margin-top: 80px;
+	border-top: 1px solid #002200;
+	padding: 40px 0 40px;
+	text-align: center;
+}
+
+
+/******************************************************************************/
+/* Responsive Styles
+/******************************************************************************/
 
 /* Smart device, tablet, laptops */
 @media (max-width: 1200px) {
@@ -87,6 +146,18 @@ footer {
 	}
 }
 
-/* Desktop */
-@media (min-width: 1200px) {
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+	.kpi-item {
+		font-size: 0.75em !important;
+	}
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
