@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a578002f7c8eb5a42879)
- * Config saved to config.json and https://gist.github.com/a578002f7c8eb5a42879
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=31d67add94c839fe47ad)
+ * Config saved to config.json and https://gist.github.com/31d67add94c839fe47ad
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -1089,7 +1089,7 @@ body {
   font-family: "Ropa Sans", sans-serif;
   font-size: 2em;
   line-height: 1.42857143;
-  color: #003300;
+  color: #006600;
   background-color: #000000;
 }
 input,
@@ -2658,7 +2658,7 @@ select[multiple].form-group-lg .form-control {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #00b300;
+  color: #00e600;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4678,7 +4678,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #003300;
+  color: #006600;
 }
 .alert {
   padding: 15px;
@@ -5517,9 +5517,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+  border: 1px solid #000000;
   border-radius: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -5546,7 +5545,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #002200;
   min-height: 16.42857143px;
 }
 .modal-header .close {
@@ -5563,7 +5562,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #002200;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;

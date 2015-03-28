@@ -16,6 +16,16 @@ ul, li {
 	list-style-type: none;
 }
 
+ul.list-icon-square li {
+	list-style-type: square;
+	margin-left: 40px;
+	padding-left: 4px;
+}
+
+p {
+	margin: 10px 0;
+}
+
 span.eur {
 	font-size: 0.5em;
 	color: #004400;
@@ -45,6 +55,12 @@ footer {
 #rates-container > li > h2 {
 	margin: 0;
 	color: #00DD00;
+}
+
+#rates-container ul, #rates-container li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 #spinner {
