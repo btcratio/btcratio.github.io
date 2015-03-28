@@ -1,0 +1,76 @@
+body {
+	padding-top: 100px;
+}
+
+h1 {
+	margin: 20px 0 40px;
+}
+
+h1, h2 {
+	color: #00DD00;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+span.eur {
+	font-size: 0.5em;
+	color: #004400;
+}
+
+footer {
+	margin-top: 80px;
+	border-top: 1px solid #002200;
+	padding: 40px 0 40px;
+	text-align: center;
+}
+
+#average {
+	text-align: center;
+}
+
+#rate-average {
+	margin: 40px;
+}
+
+#rates-container > li {
+	padding: 10px 0;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#rates-container > li > h2 {
+	margin: 0;
+	color: #00DD00;
+}
+
+#spinner {
+	position: fixed;
+	top: 40px;
+	right: 5%;
+	font-size: 40px;
+	color: #001100;
+	cursor: pointer;
+}
+
+#spinner .fa-spin {
+	color: #008800;
+}
+
+/* Smart device, tablet, laptops */
+@media (max-width: 1200px) {
+	#rates-container {
+		margin-top: 60px;
+	}
+
+	#rates-container li {
+		text-align: center;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+}

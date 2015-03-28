@@ -12,7 +12,7 @@
     "@brand-warning": "#f0ad4e",
     "@brand-danger": "#d9534f",
     "@body-bg": "#000",
-    "@text-color": "@brand-primary",
+    "@text-color": "darken(@brand-primary, 40%)",
     "@link-color": "darken(@brand-primary, 20%)",
     "@link-hover-color": "lighten(@link-color, 10%)",
     "@link-hover-decoration": "none",
@@ -23,10 +23,10 @@
     "@font-size-base": "2em",
     "@font-size-large": "ceil((@font-size-base * 1.5))",
     "@font-size-small": "ceil((@font-size-base * 0.75))",
-    "@font-size-h1": "floor((@font-size-base * 2.5))",
-    "@font-size-h2": "floor((@font-size-base * 1.75))",
-    "@font-size-h3": "ceil((@font-size-base * 1.5))",
-    "@font-size-h4": "ceil((@font-size-base * 1.25))",
+    "@font-size-h1": "floor((@font-size-base * 1.5))",
+    "@font-size-h2": "floor((@font-size-base * 1.35))",
+    "@font-size-h3": "ceil((@font-size-base * 1.15))",
+    "@font-size-h4": "ceil((@font-size-base * 1.05))",
     "@font-size-h5": "@font-size-base",
     "@font-size-h6": "ceil((@font-size-base * 0.75))",
     "@line-height-base": "1.428571429",
@@ -425,5 +425,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=f30cca04959e1b26438b"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=a578002f7c8eb5a42879"
 }

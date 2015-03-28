@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=f30cca04959e1b26438b)
- * Config saved to config.json and https://gist.github.com/f30cca04959e1b26438b
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a578002f7c8eb5a42879)
+ * Config saved to config.json and https://gist.github.com/a578002f7c8eb5a42879
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -1089,7 +1089,7 @@ body {
   font-family: "Ropa Sans", sans-serif;
   font-size: 2em;
   line-height: 1.42857143;
-  color: #00ff00;
+  color: #003300;
   background-color: #000000;
 }
 input,
@@ -1269,11 +1269,11 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 5em;
+  font-size: 3em;
 }
 h2,
 .h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
 h3,
 .h3 {
@@ -2658,7 +2658,7 @@ select[multiple].form-group-lg .form-control {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #80ff80;
+  color: #00b300;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4678,7 +4678,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #00ff00;
+  color: #003300;
 }
 .alert {
   padding: 15px;
