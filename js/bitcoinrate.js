@@ -22,9 +22,10 @@ var getRates = function(rateMode) {
 		
 		var sum = average = counter = max = min = 0;
 		var minExchange = maxExchange = '';
+		console.log(get);
 
 		$.each(get, function(name, data) {
-			if (name !== "timestamp") {
+			if (name !== "timestamp" && name !== "vircurex") {
 
 				if(max < data.rates.last) {
 					max = data.rates.last;
